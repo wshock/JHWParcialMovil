@@ -3,6 +3,7 @@ package com.unacmovil.jhwparcialmovil.ui.login
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import android.util.Patterns
 import com.unacmovil.jhwparcialmovil.data.LoginRepository
 import com.unacmovil.jhwparcialmovil.data.Result
 
@@ -17,11 +18,7 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
     val loginResult: LiveData<LoginResult> = _loginResult
 
     fun login(username: String, password: String) {
-        if (!isUserNameValid(username) || !isPasswordValid(password)) {
-            _loginResult.value = LoginResult(error = R.string.required_fields)
-            return
-        }
-
+        // can be launched in a separate asynchronous job
         val result = loginRepository.login(username, password)
 
         if (result is Result.Success) {
@@ -42,11 +39,17 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
         }
     }
 
+    // A placeholder username validation check
     private fun isUserNameValid(username: String): Boolean {
-        return username.isNotBlank()
+        return if (username.contains("@")) {
+            Patterns.EMAIL_ADDRESS.matcher(username).matches()
+        } else {
+            username.isNotBlank()
+        }
     }
 
+    // A placeholder password validation check
     private fun isPasswordValid(password: String): Boolean {
-        return password.isNotBlank()
+        return password.length > 5
     }
 }
