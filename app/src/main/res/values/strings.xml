@@ -10,12 +10,20 @@
     <string name="invalid_password">Debes escribir un password</string>
     <string name="login_failed">No se pudo iniciar sesion</string>
     <string name="required_fields">Debes escribir username y password</string>
-    <string name="unit_1_tab">Unit 1</string>
-    <string name="unit_2_tab">Unit 2</string>
-    <string name="unit_3_tab">Unit 3</string>
-    <string name="unit_1_content">Este es el fragment Unit 1</string>
-    <string name="unit_2_content">Este es el fragment Unit 2</string>
-    <string name="unit_3_content">Este es el fragment Unit 3</string>
+    <string name="unit_1_tab">Longitud</string>
+    <string name="unit_2_tab">Masa</string>
+    <string name="unit_3_tab">Moneda</string>
+    <string name="unit_1_title">Conversor de Longitud</string>
+    <string name="unit_2_title">Conversor de Masa</string>
+    <string name="unit_3_title">Conversor de Moneda</string>
+    <string name="input_value_hint">Ingresa un valor</string>
+    <string name="label_from">Desde</string>
+    <string name="label_to">Hacia</string>
+    <string name="action_convert">Convertir</string>
+    <string name="result_placeholder">Resultado: -</string>
+    <string name="result_format">Resultado: %1$s %2$s</string>
+    <string name="error_invalid_value">Ingresa un numero valido</string>
+    <string name="currency_rate_note">Tasas de referencia fijas: 1 USD=4000 COP, 1 EUR=4350 COP, 1 MXN=235 COP.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_button">Dummy Button</string>
