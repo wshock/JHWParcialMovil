@@ -1,14 +1,21 @@
 <resources>
     <string name="app_name">JHWParcialMovil</string>
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="welcome">Bienvenido, %1$s</string>
+    <string name="invalid_username">Debes escribir un username</string>
+    <string name="invalid_password">Debes escribir un password</string>
+    <string name="login_failed">No se pudo iniciar sesion</string>
+    <string name="required_fields">Debes escribir username y password</string>
+    <string name="unit_1_tab">Unit 1</string>
+    <string name="unit_2_tab">Unit 2</string>
+    <string name="unit_3_tab">Unit 3</string>
+    <string name="unit_1_content">Este es el fragment Unit 1</string>
+    <string name="unit_2_content">Este es el fragment Unit 2</string>
+    <string name="unit_3_content">Este es el fragment Unit 3</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_button">Dummy Button</string>
